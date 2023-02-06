@@ -17,7 +17,8 @@ function showList(){//refreshes the post it list
     main.innerHTML = ''; //emptys the main HTML in order to refresh the list
 
 
-    for(let i = 0; i < postIt.length; i++){
+
+    for(let i = postIt.length - 1; i >= 0; i--){ //reverses the array so that the latest items are shown first
 
         let randomNumber = Math.floor(Math.random() * 5);
         let postItColour = colours[randomNumber];
