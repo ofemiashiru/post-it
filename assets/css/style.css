@@ -82,7 +82,7 @@ h1{
     bottom:-2px;
     left: 3px;
     
-    rotate: 355deg;
+    transform: rotate(355deg); /*Make sure to use transform when using rotate https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate*/
     box-shadow: 0 -1px 20px rgb(69, 69, 69) ;
     border-top-right-radius: 0;
     border-bottom-left-radius: 65px;
