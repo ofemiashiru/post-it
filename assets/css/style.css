@@ -21,6 +21,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 #main .post-it{
@@ -114,6 +115,21 @@ h1{
 
 #add-btn i {
     font-size: 1.3rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+
+}
+
+footer p {
+    padding: 10px;
+    
+    color: #FAF9F6;
 }
 
 @media screen and (max-width: 1100px){

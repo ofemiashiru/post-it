@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta name="description" content="Post It allows you to quickly place your thoughts down on easy to notes to help organise your life">
-    <meta name="keywords" content="PostIT, Organise, arrange, plan, ">
+    <meta name="keywords" content="PostIT, Organise, arrange, plan, strategise">
     <meta name="author" content="Femi Ashiru">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +20,8 @@
 <body>
     <h1>Post-iT!</h1>
     <section id="form-section">
-        
-            <textarea onblur="updateInput()" class="form-items" id="input-box"></textarea>
-            <button onclick="addPostIt()" class="form-items" id="add-btn">
+            <textarea onblur="updateInput()" class="form-items" id="input-box" placeholder="Start typing..." aria-label="Start typing..."></textarea>
+            <button onclick="addPostIt()" class="form-items" id="add-btn" aria-label="Add Post-iT">
                 <i class="fas fa-plus"></i>
             </button>
         
@@ -32,6 +31,9 @@
 
 
     </section>
+    <footer>
+        <p>Developed By Femi Ashiru</p>
+    </footer>
     <script src="https://kit.fontawesome.com/27cb7f1fb6.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js" type="text/javascript"></script>
     

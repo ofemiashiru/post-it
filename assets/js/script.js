@@ -19,7 +19,7 @@ function showList(){//refreshes the post it list
         main.innerHTML += `
         <div style="background-color:${postItColour}" class="post-it">
             <p>
-                <i onclick="deletePostIt(${i})" class="fas fa-trash"></i>
+                <i onclick="deletePostIt(${i})" class="fas fa-trash" aria-label="Delete Post-iT"></i>
             </p>
             <hr>
             ${postIt[i]}
