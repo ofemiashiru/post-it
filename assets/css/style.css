@@ -4,5 +4,15 @@
     padding: 0;
 }
 
+#main{
+    display: flex;
+}
 
+#main div{
+    border:1px solid yellow;
+    flex-wrap: wrap;
+    width: 300px;
+    min-height: 250px;
+    margin: 10px;
+}
 
