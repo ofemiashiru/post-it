@@ -2,7 +2,7 @@ let body = document.body
 
 let main = document.getElementById('main')
 
-let postIt = ['Add new post it', 'brand new note', 'hello there', 'Hello'];
+let postIt = ['Organise!!', 'Every other day I organise', 'Some of us are wise', 'Every other person over wise'];
 
 let colours = ['#f39a4f','#eb6092','#4ab6d9','#abcc51','#f9c847'];
 showList()
@@ -34,4 +34,19 @@ function showList(){
 function deletePostIt(i){
     postIt.splice(i,1);
     showList() 
+}
+
+let newPostIt;
+let userInput = document.getElementById('input-box')
+
+function updateInput(){
+    newPostIt = userInput.value
+}
+
+
+function addPostIt(){
+    postIt.push(newPostIt)
+    showList() 
+    newPostIt = undefined
+    userInput.value = ''
 }

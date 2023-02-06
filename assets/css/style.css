@@ -2,6 +2,8 @@
     transition: 0.10s;
     margin: 0;
     padding: 0;
+
+    font-family: 'Roboto', cursive;
     
 }
 
@@ -63,23 +65,22 @@ h1{
     border-bottom-left-radius: 65px;
 }
 
-form{
+#form-section{
     display: flex;
     justify-content: center;
     margin: 50px;
 }
 
-form .form-items{
+#form-section .form-items{
     flex-wrap: wrap;
 }
 
-form textarea{
-    font-family: Arial, Helvetica, sans-serif;
+#form-section textarea{
     padding: 10px;
     min-width: 500px;
     min-height: 50px;
 }
 
-form #add-btn{
+#form-section #add-btn{
     padding:10px;
 }
