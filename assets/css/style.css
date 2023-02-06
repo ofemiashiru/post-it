@@ -2,6 +2,7 @@
     transition: 0.5s;
     margin: 0;
     padding: 0;
+    font-family: 'Patrick Hand', cursive;
 }
 
 h1{
@@ -21,7 +22,7 @@ h1{
     margin: 10px;
     padding: 10px;
 
-    font-family: 'Patrick Hand', cursive;
+    text-align: center;
     font-size: 2rem;
     letter-spacing: 2px;
 
