@@ -1,5 +1,5 @@
 * {
-    transition: 0.10s;
+
     margin: 0;
     padding: 0;
     font-family: 'Roboto', cursive;
@@ -93,9 +93,12 @@ h1{
 
 #form-section textarea{
     padding: 10px;
-    min-width: 300px;
+    min-width:40% ;
+    max-width: 50%;
+
     min-height: 50px;
     font-size: 1rem;
+    border-radius: 5px;
 }
 
 #form-section #add-btn{
@@ -163,4 +166,30 @@ footer p {
     #main  .post-it{
         flex:50%
     }
+}
+
+
+@media screen and (max-width: 560px){
+    #main  .post-it{
+        flex:50%
+    }
+
+
+    #form-section{
+        flex-direction: column;
+        
+    }
+
+    
+    #form-section textarea{
+
+        max-width: 100%;
+    }
+    
+    #form-section #add-btn{
+        margin-top: 20px;
+    }
+    
+    
+
 }
