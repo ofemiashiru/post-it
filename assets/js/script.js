@@ -1,7 +1,13 @@
 let body = document.body
 let main = document.getElementById('main')
 
-let postIt = ['Organise!!', 'Every other day I organise!', 'Some of us are wise!', 'Every other person over wise!'];
+let postIt = [
+    'I never sleep cause sleep is the cousin of death', 
+    'Organise, every other day I organise!', 
+    'You might win some but you just lost one', 
+    'Back back, forth and forth'
+];
+
 let colours = ['orange','pink','blue','green','gold'];
 
 showList()//refreshes the post it list
@@ -22,7 +28,10 @@ function showList(){//refreshes the post it list
                     <i onclick="deletePostIt(${i})" class="fas fa-trash" aria-label="Delete Post-iT"></i>
                 </p>
                 <hr>
-                ${postIt[i]}
+                <div class="post-body">
+                    ${postIt[i]}
+                </div>
+                
                 <div class="post-it-corner ${postItColour}"></div>
             </div>
         `

@@ -25,7 +25,6 @@ h1{
 }
 
 #main .post-it{
-    font-family: 'Patrick Hand', cursive;
     flex: 20%;
     height: 250px;
     margin: 10px;
@@ -62,6 +61,13 @@ h1{
     width: 100%;
     height: fit-content;
     padding: 0;
+}
+
+.post-it .post-body{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    height: 200px;
+    overflow: scroll;
 }
 
 .post-it-corner{
