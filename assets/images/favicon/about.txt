@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Archivo Black
+- Font Author: Copyright 2017 The Archivo Black Project Authors (https://github.com/Omnibus-Type/ArchivoBlack)
+- Font Source: http://fonts.gstatic.com/s/archivoblack/v17/HTxqL289NzCGg4MzN6KJ7eW6OYuP_x7yx3A.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
