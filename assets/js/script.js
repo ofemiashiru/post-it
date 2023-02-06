@@ -51,6 +51,8 @@ function addPostIt(){
         newPostIt = undefined
         userInput.value = ''
 
+    } else{
+        alert('Please enter text')
     }
     
 }
