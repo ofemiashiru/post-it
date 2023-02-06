@@ -46,7 +46,6 @@ function updateInput(){
 
 function addPostIt(){
     if(newPostIt !== undefined){ // if the newPostIt has been set, therefore is not undefined, then add new Post It!
-
         postIt.push(newPostIt)
         showList() //refreshes the post it list
         newPostIt = undefined
