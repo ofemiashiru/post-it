@@ -9,10 +9,17 @@
 }
 
 #main div{
-    border:1px solid yellow;
+    border:1px solid black;
     flex-wrap: wrap;
-    width: 300px;
+    min-width: 250px;
     min-height: 250px;
     margin: 10px;
+    padding: 5px;
+
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+
+    border-bottom-left-radius: 50px;
 }
 
