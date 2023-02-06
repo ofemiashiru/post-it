@@ -2,7 +2,7 @@
 
 (Developer: Femi Ashiru)
 
-![Post It Responsive Image]()
+![Post It Responsive Image](docs/am-i-responsive.png)
 
 [Live Project](https://ofemiashiru.github.io/post-it/)
 
