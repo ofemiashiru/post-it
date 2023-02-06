@@ -14,8 +14,11 @@ for(let i = 0; i < postIt.length; i++){
 
     main.innerHTML += `
     <div style="background-color:${postItColour}" class="post-it">
+        <i class="fas fa-trash"></i>
+        <hr>
         ${postIt[i]}
         <div style="background-color:${postItColour}" class="post-it-corner"></div>
     </div>
+
     `
 }
