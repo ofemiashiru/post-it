@@ -4,22 +4,43 @@
     padding: 0;
 }
 
-#main{
-    display: flex;
+h1{
+    text-align: center;
 }
 
-#main div{
+#main{
+    display: flex;
+    justify-content: center;
+}
+
+#main .post-it{
     border:1px solid black;
     flex-wrap: wrap;
-    min-width: 250px;
-    min-height: 250px;
+    width: 250px;
+    height: 250px;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
 
     font-family: 'Patrick Hand', cursive;
     font-size: 2rem;
     letter-spacing: 2px;
 
-    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 65px ;
+    position:relative;
 }
+
+.post-it-corner{
+    width: 50px;
+    height: 45px;
+    
+    border: 1px solid black;
+
+    position: absolute;
+    bottom:0;
+    left: 1px;
+    
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 65px;
+}
+
 
