@@ -93,11 +93,13 @@ h1{
 }
 
 #form-section #add-btn{
-    padding:10px;
+    padding:10px 30px;
     margin-left: 10px;
     cursor: pointer;
 }
-
+#add-btn i {
+    font-size: 1.3rem;
+}
 
 @media screen and (max-width: 1100px){
     #main  .post-it{
