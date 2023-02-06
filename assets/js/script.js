@@ -2,7 +2,7 @@ let body = document.body
 let main = document.getElementById('main')
 
 let postIt = ['Organise!!', 'Every other day I organise!', 'Some of us are wise!', 'Every other person over wise!'];
-let colours = ['#f39a4f','#eb6092','#4ab6d9','#abcc51','#f9c847'];
+let colours = ['orange','pink','blue','green','gold'];
 
 showList()//refreshes the post it list
 
@@ -17,14 +17,14 @@ function showList(){//refreshes the post it list
         let postItColour = colours[randomNumber];
 
         main.innerHTML += `
-        <div style="background-color:${postItColour}" class="post-it">
-            <p>
-                <i onclick="deletePostIt(${i})" class="fas fa-trash" aria-label="Delete Post-iT"></i>
-            </p>
-            <hr>
-            ${postIt[i]}
-            <div style="background-color:${postItColour}" class="post-it-corner"></div>
-        </div>
+            <div class="post-it ${postItColour}">
+                <p>
+                    <i onclick="deletePostIt(${i})" class="fas fa-trash" aria-label="Delete Post-iT"></i>
+                </p>
+                <hr>
+                ${postIt[i]}
+                <div class="post-it-corner ${postItColour}"></div>
+            </div>
         `
     }
 

@@ -132,6 +132,26 @@ footer p {
     color: #FAF9F6;
 }
 
+.orange{
+    background-color: #f39a4f;
+}
+
+.pink{
+    background-color: #eb6092;
+}
+
+.blue{
+    background-color: #4ab6d9;
+}
+
+.green{
+    background-color: #abcc51;
+}
+
+.gold{
+    background-color: #f9c847;
+}
+
 @media screen and (max-width: 1100px){
     #main  .post-it{
         flex:30%
