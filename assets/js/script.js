@@ -19,7 +19,9 @@ function showList(){
 
         main.innerHTML += `
         <div style="background-color:${postItColour}" class="post-it">
-            <i onclick="deletePostIt(${i})" class="fas fa-trash"></i>
+            <p>
+                <i onclick="deletePostIt(${i})" class="fas fa-trash"></i>
+            </p>
             <hr>
             ${postIt[i]}
             <div style="background-color:${postItColour}" class="post-it-corner"></div>
