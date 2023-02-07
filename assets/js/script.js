@@ -48,10 +48,10 @@ function deletePostIt(i){
 }
 
 let newPostIt;
-let userInput = document.getElementById('input-box') //what the user inputs into the box
+let userInput = document.getElementById('input-box') 
 
 function updateInput(){
-    newPostIt = userInput.value
+    newPostIt = userInput.value //what the user inputs into the box
 }
 
 function addPostIt(){
