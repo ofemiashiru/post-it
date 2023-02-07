@@ -67,8 +67,9 @@ userInput.addEventListener('change', updateInput); //add event listener instead 
 let addBtn = document.getElementById('add-btn');
 
 //add function
-function addPostIt(){
+function addPostIt(event){
     if(newPostIt !== undefined){ // if the newPostIt has been set, therefore is not undefined, then add new Post It!
+        event.preventDefault();//stops the default submission of the form
         postIt.push(newPostIt);
         showList(); //refreshes the post it list
         newPostIt = undefined;
