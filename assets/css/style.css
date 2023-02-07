@@ -51,10 +51,15 @@ h1 a {
     text-align: right;
 }
 
+.post-it .delete-btn{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
 .post-it i{
     color: #000000;
     font-size: 1.2rem;
-    cursor: pointer;
     transition: 0.5s;
 }
 

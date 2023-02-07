@@ -26,7 +26,7 @@ function showList(){//refreshes the post it list
         main.innerHTML += `
             <div class="post-it ${postItColour}">
                 <p>
-                    <i onclick="deletePostIt(${i})" class="fas fa-trash" aria-label="Delete Post-iT"></i>
+                    <button class="delete-btn" value="${i}"><i  class="fas fa-trash" aria-label="Delete Post-iT"></i></button>
                 </p>
                 <hr>
                 <div class="post-body">
@@ -36,24 +36,37 @@ function showList(){//refreshes the post it list
                 <div class="post-it-corner ${postItColour}"></div>
             </div>
         `
+
+        let deleteButtons = document.getElementsByClassName('delete-btn')
+
+        for(let each of deleteButtons){
+            each.addEventListener('click', deletePostIt) //adding event listener to each delete button
+        }
     }
 
 }
-
-
-
-function deletePostIt(i){
-    postIt.splice(i,1);
+//delete function
+function deletePostIt(){
+    postIt.splice(this.value,1);
     showList() //refreshes the post it list
 }
+
+
 
 let newPostIt;
 let userInput = document.getElementById('input-box') 
 
-function updateInput(){
-    newPostIt = userInput.value //what the user inputs into the box
+//update function
+function updateInput(event){
+    newPostIt = event.target.value //what the user inputs into the box
 }
 
+userInput.addEventListener('change', updateInput) //add event listener instead of having javascript in html
+
+
+let addBtn = document.getElementById('add-btn')
+
+//add function
 function addPostIt(){
     if(newPostIt !== undefined){ // if the newPostIt has been set, therefore is not undefined, then add new Post It!
         postIt.push(newPostIt)
@@ -63,6 +76,7 @@ function addPostIt(){
 
     } else{
         alert('Please enter text')
-    }
-    
+    }   
 }
+
+addBtn.addEventListener('click', addPostIt) //add event listener instead of having javascript in html
