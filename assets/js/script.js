@@ -72,11 +72,8 @@ function addPostIt(){
         postIt.push(newPostIt);
         showList(); //refreshes the post it list
         newPostIt = undefined;
-        userInput.value = '';
-
-    } else{
-        alert('Please enter text');
-    }   
+    }
+    userInput.value = '';
 }
 
 addBtn.addEventListener('click', addPostIt); //add event listener instead of having javascript in html
