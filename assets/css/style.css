@@ -79,6 +79,7 @@ h1 a {
     position: absolute;
     height: 190px;
     overflow: scroll;
+    scrollbar-width: none;
 }
 
 .post-it-corner{
